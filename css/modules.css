@@ -105,6 +105,7 @@
     font-size: clamp(var(--font-size-h3), 5vw, var(--font-size-xxxl));
     text-transform: uppercase;
     font-weight: 400;
+    margin-bottom: 50px;
   }
   .contact-section h2 span{
     color: var(--blue-100);
@@ -143,6 +144,9 @@
   .contact-section{
     padding: 70px 0;
   }
+  .contact-section h2.secondary{
+    margin-bottom: 80px;
+  }
 }
 
 @media(min-width:1200px){
@@ -154,5 +158,8 @@
   }
   .contact-section{
     padding: 100px 0;
+  }
+  .contact-section h2.secondary{
+    margin-bottom: 130px;
   }
 }
