@@ -1,0 +1,158 @@
+@import url(global.css);
+
+@media(min-width:320px){
+  .hero-banner,
+  .about-section,
+  .contact-section{
+    height: auto;
+    padding: 50px 0;
+    background-color: rgba(var(--black-rgb),1);
+    background-image: url('../images/banner-bg.png'); /* fallback */
+    background-image: image-set(url('../images/banner-bg.png') 1x, url('../images/banner-bg@2x.png') 2x);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgba(var(--white-rgb),1);
+  }
+  .hero-banner h2{
+    color: var(--blue-100);
+  }
+  .logo svg{
+    margin-bottom: 30px;
+    width: clamp(125px, 50vw, 234px);
+  }
+  .main-title{
+    position: relative;
+    padding: 36px 0;
+  }
+  .main-title:before,
+  .main-title:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(200px, 50vw, 409px);
+    height: 2px;
+    background-color: rgba(var(--white-rgb),1);
+  }
+  .main-title:after{
+    top: auto;
+    bottom: 0;
+  }
+  .animate-arrow{
+    margin: 30px auto;
+    animation: bounce 1.2s ease-in-out infinite;
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px); /* move up by 6px */
+    }
+  }
+  .hero-description{
+    width: clamp(300px, 50vw, 855px);
+  }
+  .hero-description p{
+    font-size: clamp(var(--font-size-base), 2vw, var(--font-size-h4));
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .hero-description p:last-child{
+    margin-bottom: 0;
+  }
+  .secondary-hero{
+    background: var(--blue-100);
+  }
+  .secondary-hero img{
+    width: 100%;
+    height: auto;
+  }
+  .about-section{
+    background-color: var(--blue-100);
+    background-image: url('../images/section-light-bg.png'); /* fallback */
+    background-image: image-set(url('../images/section-light-bg.png') 1x, url('../images/section-light-bg@2x.png') 2x);
+  }
+  .about-section .boxed-item{
+    padding: clamp(30px, 5vw, 100px);
+    margin-bottom: 30px;
+    background: rgba(var(--white-rgb),.8);
+    color: rgba(var(--black-rgb),1);
+  }
+  .boxed-item h3{
+    font-size: var(--font-size-h4);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .boxed-item p{
+    font-size: var(--font-size-base);
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  .boxed-item p:last-child{
+    margin-bottom: 0;
+  }
+  .contact-section{
+    padding: 50px 0;
+    background-color:rgba(var(--black-rgb),1);
+    background-image: url('../images/section-dark-bg.png'); /* fallback */
+    background-image: image-set(url('../images/section-dark-bg.png') 1x, url('../images/section-dark-bg@2x.png') 2x);
+  }
+  .contact-section h2.secondary{
+    font-size: clamp(var(--font-size-h3), 5vw, var(--font-size-xxxl));
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  .contact-section h2 span{
+    color: var(--blue-100);
+  }
+  .contact-section input[type="text"],
+  .contact-section input[type="email"],
+  .contact-section textarea{
+    background-color: transparent;
+    border-radius: 0;
+    border:none;
+    border-bottom: solid 1px rgba(var(--white-rgb),1);
+    color: rgba(var(--white-rgb),1);
+  }
+  .contact-section input,
+  .contact-section textarea{
+    padding-left: 0;
+    padding-right: 0;
+    color: rgba(var(--white-rgb),1);
+  }
+  .contact-section textarea{
+    resize: none;
+    color: rgba(var(--white-rgb),1);
+  }
+  .contact-section textarea:focus{
+    background-color: transparent;
+    color: rgba(var(--white-rgb),1);
+  }
+}
+@media(min-width:768px){
+  .logo{
+    margin-bottom: 50px;
+  }
+  .animate-arrow{
+    margin: 50px auto;
+  }
+  .contact-section{
+    padding: 70px 0;
+  }
+}
+
+@media(min-width:1200px){
+  .logo{
+    margin-bottom: 115px;
+  }
+  .hero-banner{
+    height: 100vh;
+  }
+  .contact-section{
+    padding: 100px 0;
+  }
+}
