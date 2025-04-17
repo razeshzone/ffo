@@ -70,6 +70,7 @@
   }
   .secondary-hero img{
     width: 100%;
+     min-height: 50vh;
     height: auto;
   }
   .about-section{
