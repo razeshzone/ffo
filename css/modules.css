@@ -72,8 +72,6 @@
   .secondary-hero img{
     width: 100%;
     height: auto;
-    min-height: 50dvh;
-    min-height: 50vh;
   }
   .about-section{
     background-color: var(--blue-100);
