@@ -154,6 +154,7 @@
     margin-bottom: 115px;
   }
   .hero-banner{
+    min-height: 100vh;
     height: auto;
   }
   .contact-section{
@@ -161,10 +162,5 @@
   }
   .contact-section h2.secondary{
     margin-bottom: 130px;
-  }
-}
-@media(min-width:1921px){
-  .hero-banner{
-    height: 100vh;
   }
 }
