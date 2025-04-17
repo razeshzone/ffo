@@ -154,12 +154,17 @@
     margin-bottom: 115px;
   }
   .hero-banner{
-    height: 100vh;
+    height: auto;
   }
   .contact-section{
     padding: 100px 0;
   }
   .contact-section h2.secondary{
     margin-bottom: 130px;
+  }
+}
+@media(min-width:1920px){
+  .hero-banner{
+    height: 100vh;
   }
 }
