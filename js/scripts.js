@@ -36,5 +36,11 @@ $(function () {
     }
   });
   
-
+  //animate scroll to next section
+  $('.animate-arrow').on('click', function () {
+    $('html, body').animate({
+      scrollTop: $('#section-secondary').offset().top
+    }, 800); // 800ms scroll duration
+  });
+  
 });
